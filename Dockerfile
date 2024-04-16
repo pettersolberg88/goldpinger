@@ -5,6 +5,7 @@ ARG TARGETARCH
 ARG TARGETOS
 
 # Get dependencies
+
 WORKDIR /w
 COPY go.mod go.sum ./
 RUN go mod download
